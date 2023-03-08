@@ -8,15 +8,15 @@ def step_impl(context):
 def step_impl(context):
     context.JS_Alerts_page_object.accept_alert_with_text()
 
-@Then('Then Element page: Message is displayed under the "Result:"')
+@Then('Element page: Message is displayed under the "Result:"')
 def step_impl(context):
     context.JS_Alerts_page_object.check_displayed_text_result()
 
-@When('When Element page: Pop-up window shows up and I click "Cancel" button')
+@When('Element page: Pop-up window shows up and I click "Cancel" button')
 def step_impl(context):
     context.JS_Alerts_page_object.cancel_popup_window_without_text()
 
-@Then('Then Element page: I get displayed "You entered: null" message under "Result:"')
+@Then('Element page: I get displayed "You entered: null" message under "Result:"')
 def step_impl(context):
     context.JS_Alerts_page_object.check_result_when_cancel_popup()
 

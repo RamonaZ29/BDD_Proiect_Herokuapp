@@ -3,7 +3,7 @@ Feature: Check Javascript Alerts functionality on the-internet.herokuapp.com web
   Background:
     Given Home page: I am on the-internet.herokuapp.com
 
-   @JSAlerts @JSPrompt
+   @JSAlerts @JSPrompt @1
   Scenario: I insert text in the JS Prompt pop-up window
     When Homepage: I check for "JavaScript Alerts" element and I click on it
     When Element page: I click "Click for JS Prompt" button

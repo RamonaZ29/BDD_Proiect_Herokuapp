@@ -1,5 +1,6 @@
 from browser import Browser
 from selenium.webdriver.common.by import By
+import time
 
 class Home_page(Browser):
 
